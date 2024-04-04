@@ -3,6 +3,7 @@ import log from '/logo.png'
 import { useState } from 'react';
 
 
+
 export default function NavBar() {
     const [menuOpen, setMenuOpen] = useState(false);
 
@@ -22,6 +23,7 @@ export default function NavBar() {
         <li><a className=' text-[#dd9445]' href="/">Home</a></li>
         <li><a href="about" className=' text-[#dd9445]'>About</a></li>
         <li><a href="blog"  className=' text-[#dd9445]'>Blog</a></li>
+        <li><a href="programs"  className=' text-[#dd9445]'>Programs</a></li>
       </ul>
     </nav>
   </div>

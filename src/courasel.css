@@ -1,0 +1,42 @@
+.carousel-container {
+    position: relative;
+    width: 90%;
+    overflow: hidden;
+    margin-top: 20px;
+  }
+  
+  .carousel-image {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover; /* This ensures the image covers the entire container */
+  }
+  
+  .prev-button, .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    
+  }
+  
+  .prev-button {
+    left: 10px;
+  }
+  
+  .next-button {
+    right: 10px;
+  }
+  .centered-span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Adjust color as needed */
+    text-align: center;
+    font-size: larger;
+    z-index: 1; /* Ensure span is above the image */
+  }

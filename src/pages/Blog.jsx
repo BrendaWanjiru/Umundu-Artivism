@@ -7,7 +7,7 @@ import ua from "/ua.jpg";
 import wall from "/so.jpg";
 import ModalComponent from "../components/Modal";
 
-const Kard = ({ type, title, summary, img, blog }) => {
+const Kard = ({ date, title, summary, img, blog }) => {
   return (
     <motion.article
       className=" w-full flex items-center justify-between border border-solid border-dark bg-light shadow-xl 
@@ -23,8 +23,11 @@ const Kard = ({ type, title, summary, img, blog }) => {
       >
         <img src={img} alt={title} className=" w-full h-80" />
       </a>
-      <div className=" w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6">
-        <span></span>
+      <div className=" w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-2">
+        <div className=" w-full">
+        <span className=" float-right text-[#dd9445] bg-orange-950 p-4">{date}</span>
+        </div>
+       
 
         <h2 className="my-2 w-full text-left text-xl text-[#dd9445] font-bold sm:text-sm">
           {title}
@@ -54,6 +57,7 @@ export default function Blog() {
       <div class="grid grid-cols-6 gap-4">
         <div class="col-start-2 col-span-4 my-10">
           <Kard
+          date={`13 May 2020`}
             title={"CREATING AWARENESS, NURTURING TALENTS"}
             summary="The Umundu Artivism is a creation of the vision bearer, Miss Lynnet Wawira. The term Umundu means being Humane which is a Native term origina..."
             img={ua}
@@ -99,6 +103,7 @@ export default function Blog() {
             }
           />
           <Kard
+          date={`4 May 2021`}
             title={"OVERCOMING SEXUAL ABUSE"}
             summary="1 in every 3 women and 1 in every 4 men globally have been sexually assaulted at some point in their lives, this is according to data from th..."
             img={b1}
@@ -187,6 +192,7 @@ export default function Blog() {
             }
           />
           <Kard
+          date={`25 May 2021`}
             title={"MENSTRUAL HYGIENE AWARENESS CAMPAIGN"}
             summary="“Anything you can do I can do it Bleeding.” 
 
