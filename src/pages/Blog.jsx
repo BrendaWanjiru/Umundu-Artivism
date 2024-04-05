@@ -11,7 +11,7 @@ const Kard = ({ date, title, summary, img, blog }) => {
   return (
     <motion.article
       className=" w-full flex items-center justify-between border border-solid border-dark bg-light shadow-xl 
-       lg:flex-col lg:p-8 xs:rounded-2xl xs:p-4 hover:shadow-2xl my-10 "
+       lg:flex-col lg:p-8 xs:rounded-2xl xs:p-1 sm:p-2 hover:shadow-2xl my-10 "
       initial={{ y: 50 }}
       whileInView={{ y: 0 }}
       transition={{ duration: 0.5, type: "spring" }}
@@ -45,15 +45,15 @@ const Kard = ({ date, title, summary, img, blog }) => {
 export default function Blog() {
   return (
     <section className=" bg-white p-6 text-black ">
-        <div className="grid grid-cols-8 gap-4">
-            <div className=" col-start-2 col-span-4">
+        <div className="grid grid-cols-8 sm:grid-cols-1 gap-4">
+            <div className=" col-start-2 sm:col-start-1 sm:col-span-1 col-span-4">
             <img src={wall} className=" w-full h-full" />
             </div>
-            <div className=" col-start-6 col-span-3 py-7 content-end justify-center text-center">
+            <div className=" col-start-6 sm:col-start-1 sm:col-span-1 col-span-3 py-7 content-end justify-center text-center">
                 <h4>Sheltering Hearts, Embracing Dreams, Building Futures</h4>
             </div>
         </div>
-        <hr className="h-px mt-24 bg-gray-200 border-0 w-3/4 mx-auto dark:bg-gray-700"/>
+        <hr className="h-px mt-24 sm:mt-14 bg-gray-200 border-0 w-3/4 mx-auto dark:bg-gray-700"/>
       <div class="grid grid-cols-6 gap-4">
         <div class="col-start-2 col-span-4 my-10">
           <Kard

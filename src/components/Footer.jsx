@@ -4,7 +4,7 @@ import log from "/logo.png";
 export default function Footer() {
   return (
     <section className="w-screen h-1/2 bg-[#f4daa1]">
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-3 md:grid-cols-2 lg:grid-cols-2 sm:grid-cols-1 gap-4">
         <div className="col-start-1 col-span-1 flex flex-col items-center justify-center p-10">
           <img src={log} alt="logo" srcSet="" />
           <div className=" flex flex-row justify-center gap-10 mt-6">
@@ -30,7 +30,7 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        <div className="col-start-2 col-span-1 flex flex-col items-center justify-center">
+        <div className="col-start-2 sm:col-start-1 sm:hidden lg:hidden col-span-1 flex md:hidden flex-col items-center justify-center">
           <h3 className="text-[#dd9445] font-semibold text-xl m-6 underline">Explore</h3>
           <ul className=" text-center gap-6 text-black text-lg ">
             <li className="hover:text-[#dd9445]">Home</li>
@@ -38,8 +38,8 @@ export default function Footer() {
             <li className="hover:text-[#dd9445]">Our Blog</li>
           </ul>
         </div>
-        <div className="col-start-3 col-span-1 flex items-center p-4 justify-center">
-          <div class="max-w-md mx-auto relative overflow-hidden z-10 bg-[#dd9445] p-8 rounded-lg shadow-md before:w-24 before:h-24 before:absolute before:bg-purple-600 before:rounded-full before:-z-10 before:blur-2xl after:w-32 after:h-32 after:absolute after:bg-sky-400 after:rounded-full after:-z-10 after:blur-xl after:top-24 after:-right-12">
+        <div className="col-start-3 sm:col-start-1 md:col-start-2 lg:col-start-2  col-span-1 flex items-center p-4 justify-center">
+          <div class="w-3/4 mx-auto relative overflow-hidden z-10 bg-[#dd9445] p-8 rounded-lg shadow-md">
             <h2 class="text-2xl font-bold text-white">Contact Us</h2>
 
             <form method="post" action="#">
@@ -86,11 +86,11 @@ export default function Footer() {
                 ></textarea>
               </div>
 
-              <div class="flex justify-end">
+              <div class="flexjustify-center">
                 <button
-                  class="bg-gradient-to-r mx-auto from-purple-600 via-purple-400 to-blue-500 text-white px-4 py-2 font-bold rounded-md hover:opacity-80"
+                  class=" mx-auto flex gap-4 align-baseline bg-orange-950 text-white px-4 py-2 font-bold rounded-md hover:opacity-80"
                   type="submit"
-                >
+                >Send
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
   <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
 </svg>

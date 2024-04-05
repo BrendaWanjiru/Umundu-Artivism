@@ -28,11 +28,11 @@ function App() {
         ></Suspense>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="blog" element={<Blog />} />
-          <Route path="programs" element={<Programs/>} />
-          <Route path="special_programs" element />
-          <Route path="donate" element />
+          <Route path="/about" element={<About />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/programs" element={<Programs/>} />
+          <Route path="/special_programs" element />
+          <Route path="/donate" element />
         </Routes>
         <Footer />
       </BrowserRouter>

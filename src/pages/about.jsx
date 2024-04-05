@@ -6,7 +6,7 @@ export default function about() {
   return (
     <>
       <section className="w-screen bg-white">
-        <div className="bg-[url('/bnw.jpg')] w-full h-screen bg-contain bg-center py-10">
+        <div className="bg-[url('/bnw.jpg')] w-full h-screen bg-contain bg-center sm:bg-cover md:bg-cover lg:bg-cover py-10">
           <div className="h-full grid grid-cols-6 gap-4 content-end">
             <div className="col-start-2 col-span-4 text-center m-4">
               <h1 className="text-[#dd9445] text-3xl font-bold p-4 decoration-wavy">
@@ -23,8 +23,8 @@ export default function about() {
           </div>
         </div>
 
-        <div className="grid grid-cols-8 gap-4 items-center mt-32 mb-10">
-          <div className="col-start-1 col-span-2 flex justify-center">
+        <div className="grid grid-cols-8 gap-4 sm:grid-cols-1 lg:grid-cols-2 items-center mt-32 mb-10">
+          <div className="col-start-1 col-span-2 sm:col-span-1 lg:col-span-1 flex justify-center">
             <div class="card">
               <div className="p-6">
                 <h1 className=" text-xl font-semibold underline hover:no-underline">
@@ -37,7 +37,7 @@ export default function about() {
               </div>
             </div>
           </div>
-          <div className="col-start-3 col-span-2 flex justify-center">
+          <div className="col-start-3 col-span-2 sm:col-span-1 lg:col-span-1 lg:col-start-2 flex justify-center">
             <div class="card">
               <div className="p-6">
                 <h1 className=" text-xl font-semibold underline hover:no-underline">
@@ -52,7 +52,7 @@ export default function about() {
               </div>
             </div>
           </div>
-          <div className="col-start-5 col-span-2 flex justify-center">
+          <div className="col-start-5 col-span-2 lg:col-span-1 lg:col-start-1 flex sm:col-span-1 justify-center">
             <div class="card">
               <div className="p-6">
                 <h1 className=" text-xl font-semibold underline hover:no-underline">
@@ -70,7 +70,7 @@ export default function about() {
               </div>
             </div>
           </div>
-          <div className="col-start-7 col-span-2 flex justify-center">
+          <div className="col-start-7 col-span-2 sm:col-span-1 lg:col-span-1 lg:col-start-2 flex justify-center">
             <div class="card">
               <div className="p-6">
                 <h1 className=" text-xl font-semibold underline hover:no-underline">
@@ -85,16 +85,16 @@ export default function about() {
           </div>
         </div>
         <div className=" bg-white text-black w-screen py-10">
-            <div className="m-10 py-20 px-10">
+            <div className="m-10 py-20 sm:py-10 px-10">
         <h1 className=" text-3xl underline hover:no-underline p-5 text-[#dd9445]">
           FOUNDER
         </h1>
         <img
-          class="float-left h-56 w-64 rounded-full mx-10 shadow-xl my-4 transform transition-transform duration-300 ease-in-out hover:scale-110"
+          class="float-left h-56 w-64 rounded-full mx-10 sm:mx-4 shadow-xl my-4 transform transition-transform duration-300 ease-in-out hover:scale-110"
           src="https://www.theumunduartivism.org/images/rie.jpg"
         />
         <h3 className=" text-[#dd9445] font-semibold text-xl">Lynnet Njeru</h3>
-        <p className=" font-normal text-lg p-4">
+        <p className=" font-normal text-lg lg:text-base p-4">
           She is a creative who believes that art cuts across all sectors when
           it comes to delivering a message.
           <br />

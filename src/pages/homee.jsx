@@ -1,10 +1,11 @@
 import React from "react";
 import Carousel from "../components/courasel";
+import care from "/dare.jpg";
 
 export default function homee() {
   return (
     <section className="w-screen h-full bg-white text-black">
-      <div className="w-full flex justify-center">
+      <div className="w-full flex justify-center sm:hidden xs:hidden">
         <h1 className=" text-2xl">UMUNDU ARTIVISM</h1>
       </div>
 
@@ -15,9 +16,9 @@ export default function homee() {
         <div className="col-start-2 col-span-4">
           <div className=" grid grid-cols-2 py-7">
             <div className=" flex justify-center">
-              <h2 className="text-3xl text-[#dd9445]">Our Impact</h2>
+              <h2 className="text-3xl sm:text-2xl text-[#dd9445]">Our Impact</h2>
             </div>
-            <div className=" text-start text-base">
+            <div className=" text-start sm:text-sm sm:text-center text-base">
               <p>
                 At Umundu Artivism, we firmly believe in the transformative
                 potential of art to touch hearts, change minds, and spur action.
@@ -27,7 +28,7 @@ export default function homee() {
           </div>
           <hr className="h-px my-10 bg-gray-200 border-0 w-3/4 mx-auto dark:bg-gray-700" />
           <div className=" grid grid-cols-2 py-7">
-            <div className=" text-start text-base">
+            <div className=" text-start text-base sm:text-sm sm:text-center">
               <p>
                 We actively engage with communities and schools through
                 awareness campaigns, focusing on crucial topics like Sexual and
@@ -38,15 +39,15 @@ export default function homee() {
               </p>
             </div>
             <div className=" flex justify-center">
-              <h2 className="text-3xl text-[#dd9445]">Community Engagement</h2>
+              <h2 className="text-3xl text-[#dd9445] sm:text-2xl sm:ml-6">Community Engagement</h2>
             </div>
           </div>
           <hr className="h-px my-10 bg-gray-200 border-0 w-3/4 mx-auto dark:bg-gray-700" />
           <div className=" grid grid-cols-2">
             <div className=" flex justify-center">
-              <h2 className="text-3xl text-[#dd9445]">Safe Haven</h2>
+              <h2 className="text-3xl text-[#dd9445] sm:text-2xl">Safe Haven</h2>
             </div>
-            <div className=" text-start text-base">
+            <div className=" text-start text-base sm:text-sm sm:text-center">
               <p>
                 In cases of extreme gender-based violence, we offer a secure and
                 supportive environment at our center. Victims can reside with us
@@ -83,18 +84,28 @@ export default function homee() {
               <li>
                 Our talents on board are from the following areas:
                 <ul className="text-center list-inside list-decimal">
-                    <li>The
-                University of Embu</li>
-                    <li>Colleges and tertiary institutions within
-                Embu county.</li>
-                <li>Community members.</li>
-                <li>Family and Friends.</li>
-                    </ul>
+                  <li>The University of Embu</li>
+                  <li>
+                    Colleges and tertiary institutions within Embu county.
+                  </li>
+                  <li>Community members.</li>
+                  <li>Family and Friends.</li>
+                </ul>
               </li>
             </ul>
           </div>
         </div>
       </div>
+      {/* <div className=" w-full h-screen my-10">
+        <div className="grid grid-cols-6 gap-4 justify-items-center h-2/3">
+          <div class="col-start-2 col-span-2 flex justify-center">
+            <img src={care} className="w-full h-full" />
+          </div>
+          <div class="col-start-4 col-span-2 h-full flex justify-center content-center">
+            <h1>Help build a future for children in need</h1>
+          </div>
+        </div>
+      </div> */}
     </section>
   );
 }

@@ -24,6 +24,7 @@ export default function NavBar() {
         <li><a href="about" className=' text-[#dd9445]'>About</a></li>
         <li><a href="blog"  className=' text-[#dd9445]'>Blog</a></li>
         <li><a href="programs"  className=' text-[#dd9445]'>Programs</a></li>
+        <li><a href="programs"  className=' text-[#dd9445] bg-orange-950 p-3 w-full my-3 hover:text-orange-500'>DONATE</a></li>
       </ul>
     </nav>
   </div>
