@@ -4,6 +4,8 @@ import care from "/dare.jpg";
 
 export default function homee() {
   return (
+    <>
+    
     <section className="w-screen h-full bg-white text-black">
       <div className="w-full flex justify-center sm:hidden xs:hidden">
         <h1 className=" text-2xl">UMUNDU ARTIVISM</h1>
@@ -107,5 +109,6 @@ export default function homee() {
         </div>
       </div> */}
     </section>
+    </>
   );
 }

@@ -1,11 +1,7 @@
-import { useState } from "react";
-import NavBar from "./components/NavBar";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Footer from "./components/Footer";
 import { Suspense, lazy } from "react";
-// import Blog from './pages/Blog';
-// import Home from './pages/Home'
-// import About from './pages/about';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 
 const Home = lazy(() => import("./pages/homee"));
 const About = lazy(() => import("./pages/about"));
@@ -25,15 +21,16 @@ function App() {
               <div class="w-4 h-4 rounded-full bg-blue-700 animate-bounce [animation-delay:-.5s]"></div>
             </div>
           }
-        ></Suspense>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/programs" element={<Programs/>} />
-          <Route path="/special_programs" element />
-          <Route path="/donate" element />
-        </Routes>
+        >
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/programs" element={<Programs />} />
+            {/* Add more routes as needed */}
+            {/* Note: Make sure to include the element prop with the corresponding component */}
+          </Routes>
+        </Suspense>
         <Footer />
       </BrowserRouter>
     </>
